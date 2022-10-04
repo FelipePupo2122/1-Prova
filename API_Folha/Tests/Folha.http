@@ -1,0 +1,28 @@
+### Listar a folha
+GET https://localhost:5001/api/folha/listar
+
+### Cadastrar uma folha slarial
+POST https://localhost:5001/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "funcionarioid" : 28,
+    "valorhora" : 250,
+    "quantidadedehoras" : 100
+}
+
+### Buscar um funcionário pelo CPF/mes/ano
+GET https://localhost:5001/api/folha/buscar/28
+
+### Deletar um funcionário pelo Id
+DELETE https://localhost:5001/api/folha/deletar/4
+
+### Alterar informações na folha
+PATCH  https://localhost:5001/api/folha/alterar
+Content-Type: application/json
+
+{
+    "funcionaridoid" : 28,
+    "valorhora" : 75,
+    "quantidadedehoras" : 100
+}
